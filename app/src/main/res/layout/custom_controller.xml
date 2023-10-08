@@ -14,12 +14,12 @@
 
     </LinearLayout>
 
-    <ImageView
+    <!--Your comment  <ImageView
         android:id="@+id/exo_rew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="32dp"
+        android:layout_height="59dp"
         android:src="@drawable/baseline_replay"
         android:theme="@style/ClickableView"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="305dp" />
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="277dp" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
