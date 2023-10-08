@@ -24,9 +24,9 @@ class WatchActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_watch)
         val playerView= findViewById<PlayerView>(R.id.player)
-        val progressBar= findViewById<ProgressBar>(R.id.progress_bar)
-        val bt_fullscreen = findViewById<ImageView>(R.id.bt_fullscreen)
-        val bt_lockscreen = findViewById<ImageView>(R.id.exo_lock)
+       // val progressBar= findViewById<ProgressBar>(R.id.progress_bar)
+       // val bt_fullscreen = findViewById<ImageView>(R.id.bt_fullscreen)
+       // val bt_lockscreen = findViewById<ImageView>(R.id.exo_lock)
 
         val player= ExoPlayer.Builder(this)
             .build()
