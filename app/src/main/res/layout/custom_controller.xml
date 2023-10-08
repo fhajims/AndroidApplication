@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#80000000">
+
+    <ImageView
+        android:id="@+id/exo_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_lock"
+        android:theme="@style/ClickableView"
+        android:layout_alignParentRight="true"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="75dp" />
 
     <LinearLayout
         android:id="@+id/sec_controlvid1"
@@ -12,14 +23,104 @@
         android:layout_centerInParent="true"
         android:orientation="horizontal">
 
+
+
+
+        <ImageView
+            android:id="@+id/exo_ffwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_forward_10"
+            android:theme="@style/ClickableView"
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <ImageView
+            android:id="@+id/exo_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_play"
+            android:theme="@style/ClickableView"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="75dp" />
+
+        <ImageView
+            android:id="@+id/exo_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_pause_24"
+            android:theme="@style/ClickableView"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <ImageView
+            android:id="@+id/exo_rew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_replay"
+            android:theme="@style/ClickableView"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="75dp" />
+
     </LinearLayout>
 
-    <!--Your comment  <ImageView
-        android:id="@+id/exo_rew"
-        android:layout_width="32dp"
-        android:layout_height="59dp"
-        android:src="@drawable/baseline_replay"
+    <LinearLayout
+        android:id="@+id/sec_controlvid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="#CBCDC8"
+            android:layout_marginRight="4dp"
+            android:layout_marginEnd="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/exo_duration"
+            android:textColor="#CBCDC8"/>
+
+        <!-------Ihr Kommentar  </LinearLayout>
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/exo_progress"
+            android:layout_marginTop="-8dp"
+            app:unplayed_color="#45424E"
+            app:buffered_color="#95989F"
+            app:played_color="#FF0000"
+            app:scrubber_color="#FF0000">
+        </com.google.android.exoplayer2.ui.DefaultTimeBar>----->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bt_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_width_full"
         android:theme="@style/ClickableView"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="277dp" />-->
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+</RelativeLayout>

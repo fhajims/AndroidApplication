@@ -7,6 +7,9 @@ import android.widget.MediaController
 import android.widget.VideoView
 
 class MainActivity : AppCompatActivity() {
+
+
+    val videoURL = "https://www.youtube.com/watch?v=eaFefVzJ2Q8"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,5 +25,8 @@ class MainActivity : AppCompatActivity() {
         mediaController.setMediaPlayer(videoView)
         videoView.setMediaController(mediaController)
         videoView.start()
+
+
+
     }
 }
